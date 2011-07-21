@@ -12,3 +12,7 @@ Control + Command + , or . - Left Right Half windows positioning
 Shift + Control + Command + , or . - Left Right monitor positioning
 
 Search for 'ASH:' to find the changes made.
+
+DOWNLOAD
+========
+ShiftIt.app is there if you just want to run the app without having to compile.
