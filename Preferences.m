@@ -56,6 +56,14 @@ OSStatus winSizer(EventHandlerCallRef nextHandler,EventRef theEvent,void *userDa
 		case 10:
 			[(WindowSizer*)userData fullScreen:NULL];
 			break;
+            
+        // ASH: Switch monitors
+        case 11:
+			[(WindowSizer*)userData shiftToLeftMonitor:NULL];
+			break;
+        case 12:
+			[(WindowSizer*)userData shiftToRightMonitor:NULL];
+			break;
 		default:
 			break;
 	}	
@@ -82,17 +90,37 @@ OSStatus winSizer(EventHandlerCallRef nextHandler,EventRef theEvent,void *userDa
     
     
     _userDefaultsValuesDict = [NSMutableDictionary dictionary];
-	NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)],HotKeyModifers,
-                               [NSNumber numberWithUnsignedInt:43],HotKeyCodes,
-                               nil];
-    [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:1 keyCode:43 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)]]];
-    [_userDefaultsValuesDict setObject:leftHalf forKey:@"leftHalf"];
     
-    NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)],HotKeyModifers,
-                                [NSNumber numberWithUnsignedInt:47],HotKeyCodes,
-                                nil];
-	[_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:2 keyCode:47 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)]]];
-    [_userDefaultsValuesDict setObject:rightHalf forKey:@"rightHalf"];
+    // ASH: Customize keys and switch monitors
+    {
+        NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)],HotKeyModifers,
+                                   [NSNumber numberWithUnsignedInt:43],HotKeyCodes,
+                                   nil];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:1 keyCode:43 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)]]];
+        [_userDefaultsValuesDict setObject:leftHalf forKey:@"leftHalf"];
+        
+        NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)],HotKeyModifers,
+                                    [NSNumber numberWithUnsignedInt:47],HotKeyCodes,
+                                    nil];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:2 keyCode:47 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)]]];
+        [_userDefaultsValuesDict setObject:rightHalf forKey:@"rightHalf"];
+    }
+    
+    {
+        NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)],HotKeyModifers,
+                                   [NSNumber numberWithUnsignedInt:43],HotKeyCodes,
+                                   nil];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:11 keyCode:43 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)]]];
+        [_userDefaultsValuesDict setObject:leftHalf forKey:@"leftHalf"];
+        
+        NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)],HotKeyModifers,
+                                    [NSNumber numberWithUnsignedInt:47],HotKeyCodes,
+                                    nil];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:12 keyCode:47 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)]]];
+        [_userDefaultsValuesDict setObject:rightHalf forKey:@"rightHalf"];
+    }
+    
+    
     
 //	_userDefaultsValuesDict = [NSMutableDictionary dictionary];
 //	NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSAlternateKeyMask)],HotKeyModifers,

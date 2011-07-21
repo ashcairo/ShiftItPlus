@@ -75,6 +75,24 @@
 						<reference key="NSOnImage" ref="971057326"/>
 						<reference key="NSMixedImage" ref="27047808"/>
 					</object>
+					<object class="NSMenuItem" id="199036685">
+						<reference key="NSMenu" ref="981997696"/>
+						<string key="NSTitle">Left Monitor</string>
+						<string key="NSKeyEquiv">,</string>
+						<int key="NSKeyEquivModMask">1441792</int>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="971057326"/>
+						<reference key="NSMixedImage" ref="27047808"/>
+					</object>
+					<object class="NSMenuItem" id="1001375211">
+						<reference key="NSMenu" ref="981997696"/>
+						<string key="NSTitle">Right Monitor</string>
+						<string key="NSKeyEquiv">.</string>
+						<int key="NSKeyEquivModMask">1441792</int>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="971057326"/>
+						<reference key="NSMixedImage" ref="27047808"/>
+					</object>
 					<object class="NSMenuItem" id="611678077">
 						<reference key="NSMenu" ref="981997696"/>
 						<bool key="NSIsDisabled">YES</bool>
@@ -176,6 +194,22 @@
 					</object>
 					<int key="connectionID">766</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">shiftToRightHalf:</string>
+						<reference key="source" ref="1064350038"/>
+						<reference key="destination" ref="1001375211"/>
+					</object>
+					<int key="connectionID">769</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">shiftToLeftHalf:</string>
+						<reference key="source" ref="1064350038"/>
+						<reference key="destination" ref="199036685"/>
+					</object>
+					<int key="connectionID">770</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -225,6 +259,8 @@
 							<reference ref="1003127791"/>
 							<reference ref="652513975"/>
 							<reference ref="480841369"/>
+							<reference ref="199036685"/>
+							<reference ref="1001375211"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -268,6 +304,16 @@
 						<reference key="object" ref="480841369"/>
 						<reference key="parent" ref="981997696"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">767</int>
+						<reference key="object" ref="199036685"/>
+						<reference key="parent" ref="981997696"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">768</int>
+						<reference key="object" ref="1001375211"/>
+						<reference key="parent" ref="981997696"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -284,11 +330,15 @@
 					<string>558.IBPluginDependency</string>
 					<string>670.IBPluginDependency</string>
 					<string>761.IBPluginDependency</string>
+					<string>767.IBPluginDependency</string>
+					<string>768.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{371, 498}, {233, 293}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -311,7 +361,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">766</int>
+			<int key="maxID">770</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

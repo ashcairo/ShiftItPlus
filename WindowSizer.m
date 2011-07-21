@@ -393,6 +393,71 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     _focusedWindow = NULL;
 }
 
+
+// ASH: Switch monitors
+-(IBAction)shiftToLeftMonitor:(id)sender{
+    NSLog(@"Shifting To Left Monitor");
+    
+	if([self getWindowParameters]){
+		[self getVisibleScreenParams];
+        CFTypeRef _position;
+        CFTypeRef _size;
+        
+		_windowPosition.x = _screenVisiblePosition.x;
+        
+        // ASH: A quick hack does the job
+        _windowPosition.x = -1024.0f;
+		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
+		
+        _windowSize.width = ((_screenVisibleSize.width)/2);
+        _windowSize.height = _screenVisibleSize.height;
+        _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
+        NSLog(@"size2 width:%f, height:%f", _windowSize.width, _windowSize.height);
+        
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilityPositionAttribute,(CFTypeRef*)_position) != kAXErrorSuccess){
+			NSLog(@"Position cannot be changed");
+		}
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess){
+			NSLog(@"Size cannot be modified");
+		}
+        
+        [self fullScreen:sender];
+    }
+    NSLog(@"Shifted To Left Half");
+    _focusedWindow = NULL;
+    
+}
+
+-(IBAction)shiftToRightMonitor:(id)sender{
+    NSLog(@"Shifting To Right Monitor");
+	if([self getWindowParameters]){
+		[self getVisibleScreenParams];        
+        CFTypeRef _position;
+        CFTypeRef _size;
+		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width/2);
+        _windowPosition.x = 100.0f;
+		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
+		
+        _windowSize.width = ((_screenVisibleSize.width)/2);
+        _windowSize.height = _screenVisibleSize.height;
+        _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
+        
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilityPositionAttribute,(CFTypeRef*)_position) != kAXErrorSuccess){
+			NSLog(@"Position cannot be changed");
+		}
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess){
+			NSLog(@"Size cannot be modified");
+		}
+        
+        [self fullScreen:sender];
+    }
+    NSLog(@"Shifted To Right Half");
+    _focusedWindow = NULL;
+    
+}
+
 -(WindowSizer *)init{
 	if(self = [super init]){;
 		_systemWideElement = AXUIElementCreateSystemWide();

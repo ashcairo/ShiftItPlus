@@ -43,4 +43,7 @@
 -(IBAction)fullScreen:(id)sender;
 -(IBAction)shiftToCenter:(id)sender;
 
+-(IBAction)shiftToLeftMonitor:(id)sender;
+-(IBAction)shiftToRightMonitor:(id)sender;
+
 @end
