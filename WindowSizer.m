@@ -410,7 +410,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
-        _windowSize.width = ((_screenVisibleSize.width)/2);
+        _windowSize.width = ((_screenVisibleSize.width));
         _windowSize.height = _screenVisibleSize.height;
         _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
         NSLog(@"size2 width:%f, height:%f", _windowSize.width, _windowSize.height);
@@ -440,7 +440,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
-        _windowSize.width = ((_screenVisibleSize.width)/2);
+        _windowSize.width = ((_screenVisibleSize.width));
         _windowSize.height = _screenVisibleSize.height;
         _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
         

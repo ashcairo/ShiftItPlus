@@ -92,31 +92,50 @@ OSStatus winSizer(EventHandlerCallRef nextHandler,EventRef theEvent,void *userDa
     _userDefaultsValuesDict = [NSMutableDictionary dictionary];
     
     // ASH: Customize keys and switch monitors
+    int leftKey = 123;          // <-
+    int rightKey = 124;         // ->
+    //int leftKey = 43;         // <
+    //int rightKey = 47;        // >
+    
+    // For splitting screen
     {
-        NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)],HotKeyModifers,
-                                   [NSNumber numberWithUnsignedInt:43],HotKeyCodes,
+        NSNumber *triggerKeys = [NSNumber numberWithUnsignedInt:(NSControlKeyMask+NSAlternateKeyMask)];
+        
+        NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   triggerKeys,HotKeyModifers,
+                                   [NSNumber numberWithUnsignedInt:leftKey],HotKeyCodes,
                                    nil];
-        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:1 keyCode:43 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)]]];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:1 
+                                                                    keyCode:leftKey 
+                                                                   modCombo:triggerKeys]];
         [_userDefaultsValuesDict setObject:leftHalf forKey:@"leftHalf"];
         
-        NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)],HotKeyModifers,
-                                    [NSNumber numberWithUnsignedInt:47],HotKeyCodes,
+        NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    triggerKeys,HotKeyModifers,
+                                    [NSNumber numberWithUnsignedInt:rightKey],HotKeyCodes,
                                     nil];
-        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:2 keyCode:47 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask)]]];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:2 
+                                                                    keyCode:rightKey 
+                                                                   modCombo:triggerKeys]];
         [_userDefaultsValuesDict setObject:rightHalf forKey:@"rightHalf"];
     }
     
+    // For moving to secondary monitor
     {
-        NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)],HotKeyModifers,
-                                   [NSNumber numberWithUnsignedInt:43],HotKeyCodes,
+        NSNumber *triggerKeys = [NSNumber numberWithUnsignedInt:(NSControlKeyMask+NSAlternateKeyMask+NSCommandKeyMask)];
+        
+        NSDictionary * leftHalf = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   triggerKeys,HotKeyModifers,
+                                   [NSNumber numberWithUnsignedInt:leftKey],HotKeyCodes,
                                    nil];
-        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:11 keyCode:43 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)]]];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:11 keyCode:leftKey modCombo:triggerKeys]];
         [_userDefaultsValuesDict setObject:leftHalf forKey:@"leftHalf"];
         
-        NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)],HotKeyModifers,
-                                    [NSNumber numberWithUnsignedInt:47],HotKeyCodes,
+        NSDictionary * rightHalf = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    triggerKeys,HotKeyModifers,
+                                    [NSNumber numberWithUnsignedInt:rightKey],HotKeyCodes,
                                     nil];
-        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:12 keyCode:47 modCombo:[NSNumber numberWithUnsignedInt:(NSCommandKeyMask+NSControlKeyMask+NSShiftKeyMask)]]];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:12 keyCode:rightKey modCombo:triggerKeys]];
         [_userDefaultsValuesDict setObject:rightHalf forKey:@"rightHalf"];
     }
     

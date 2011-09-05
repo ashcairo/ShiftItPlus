@@ -22,8 +22,9 @@
 @implementation ShiftItAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	if (!AXAPIEnabled()){
-        int ret = NSRunAlertPanel (@"UI Element Inspector requires that the Accessibility API be enabled.  Please \"Enable access for assistive devices and try again\".", @"", @"OK", @"Cancel",NULL);
+	if( !AXAPIEnabled() )
+    {
+        int ret = NSRunAlertPanel (@"The Accessibility API is required for this app.  Please \"Enable access for assistive devices and try again\".", @"", @"OK", @"Cancel",NULL);
         switch (ret){
             case NSAlertDefaultReturn:
                 [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/UniversalAccessPref.prefPane"];
@@ -70,7 +71,7 @@
 		if(!statusItem){
 			statusItem = [[temp statusItemWithLength:NSVariableStatusItemLength] retain];
 			[statusItem setMenu:statusMenu];
-			[statusItem setTitle:@"Shift"];
+			[statusItem setTitle:@"+"];
 			[statusItem setHighlightMode:YES];
 		}
 	}else {
@@ -80,7 +81,8 @@
 */	}
 }
 
--(void)registerForLogin{
+-(void)registerForLogin
+{    
 	BOOL login = [[NSUserDefaults standardUserDefaults] boolForKey:@"shiftItstartLogin"];
     if(login){
         NSString * appPath = [[NSBundle mainBundle] bundlePath];
