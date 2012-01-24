@@ -16,3 +16,7 @@ Search for 'ASH:' to find the changes made.
 DOWNLOAD
 ========
 ShiftIt.app is there if you just want to run the app without having to compile.
+
+DEMO VIDEO
+==========
+http://www.youtube.com/watch?v=JfR40FkUCbY
