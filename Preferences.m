@@ -94,8 +94,8 @@ OSStatus winSizer(EventHandlerCallRef nextHandler,EventRef theEvent,void *userDa
     // ASH: Customize keys and switch monitors
     int leftKey = 123;          // <-
     int rightKey = 124;         // ->
-    //int leftKey = 43;         // <
-    //int rightKey = 47;        // >
+    int topKey = 126;           // /\/
+    int bottomKey = 125;        // \/
     
     // For splitting screen
     {
@@ -118,6 +118,28 @@ OSStatus winSizer(EventHandlerCallRef nextHandler,EventRef theEvent,void *userDa
                                                                     keyCode:rightKey 
                                                                    modCombo:triggerKeys]];
         [_userDefaultsValuesDict setObject:rightHalf forKey:@"rightHalf"];
+    }
+    
+    {
+        NSNumber *triggerKeys = [NSNumber numberWithUnsignedInt:(NSControlKeyMask+NSAlternateKeyMask)];
+        
+        NSDictionary * topHalf = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    triggerKeys,HotKeyModifers,
+                                    [NSNumber numberWithUnsignedInt:rightKey],HotKeyCodes,
+                                    nil];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:3
+                                                                    keyCode:topKey 
+                                                                   modCombo:triggerKeys]];
+        [_userDefaultsValuesDict setObject:topHalf forKey:@"topHalf"];
+        
+        NSDictionary * bottomHalf = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  triggerKeys,HotKeyModifers,
+                                  [NSNumber numberWithUnsignedInt:rightKey],HotKeyCodes,
+                                  nil];
+        [_hKeyController registerHotKey:[[SIHotKey alloc]initWithIdentifier:4
+                                                                    keyCode:bottomKey 
+                                                                   modCombo:triggerKeys]];
+        [_userDefaultsValuesDict setObject:bottomHalf forKey:@"bottomHalf"];
     }
     
     // For moving to secondary monitor

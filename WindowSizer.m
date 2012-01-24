@@ -69,12 +69,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         _screenVisibleSize = tempScreen.visibleFrame.size;
         _screenVisiblePosition = tempScreen.visibleFrame.origin;
     }else {
-        for(int i = 0;i<[tempArray count]; i++){
+        for(int i = 0;i<[tempArray count]; i++)
+        {
             NSScreen * tempScreen = (NSScreen*)[tempArray objectAtIndex:i];
-            if (tempScreen.frame.origin.x == _screenPosition.x) {
+            if (tempScreen.frame.origin.x == _screenPosition.x) 
+            {
                 _screenVisibleSize = tempScreen.visibleFrame.size;
                 _screenVisiblePosition = tempScreen.visibleFrame.origin;
-                break;
+            }
+            else
+            {
+                _otherScreenSize = tempScreen.visibleFrame.size;
+                _otherScreenPosition = tempScreen.visibleFrame.origin;
             }
         }
     }
@@ -137,7 +143,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _size;
         
 		_windowPosition.x = _screenVisiblePosition.x;
-		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = ((_screenVisibleSize.width)/2);
@@ -158,14 +171,53 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
 }
 
+
+-(void)correctRightHalf
+{
+	if([self getWindowParameters])
+    {
+		[self getVisibleScreenParams];       
+        CFTypeRef _position;
+        CFTypeRef _size;
+		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width-_windowSize.width);
+        if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
+		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
+		
+        _windowSize.height = _screenVisibleSize.height;
+        _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
+        
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilityPositionAttribute,(CFTypeRef*)_position) != kAXErrorSuccess){
+			NSLog(@"Position cannot be changed");
+		}
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess){
+			NSLog(@"Size cannot be modified");
+		}
+    }
+    _focusedWindow = NULL;
+}
+
 -(IBAction)shiftToRightHalf:(id)sender{
     NSLog(@"Shifting To Right Half");
 	if([self getWindowParameters]){
-		[self getVisibleScreenParams];        
+		[self getVisibleScreenParams];       
         CFTypeRef _position;
         CFTypeRef _size;
 		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width/2);
-		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+        if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = ((_screenVisibleSize.width)/2);
@@ -178,10 +230,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess){
 			NSLog(@"Size cannot be modified");
 		}
+        
+        [self correctRightHalf];
     }
     NSLog(@"Shifted To Right Half");
     _focusedWindow = NULL;
-    
 }
 
 -(IBAction)shiftToTopHalf:(id)sender{
@@ -190,11 +243,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		[self getVisibleScreenParams];        
         CFTypeRef _position;
         CFTypeRef _size;
-		_windowPosition.x = _screenVisiblePosition.x;
-		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		//_windowPosition.x = _screenVisiblePosition.x;
+		if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
-        _windowSize.width = _screenVisibleSize.width;
+        //_windowSize.width = _screenVisibleSize.width;
         _windowSize.height = (_screenVisibleSize.height/2);
         _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
         
@@ -218,11 +278,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _position;
         CFTypeRef _size;
         
-		_windowPosition.x = _screenVisiblePosition.x;
-		_windowPosition.y = (_screenVisibleSize.height/2)+((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		//_windowPosition.x = _screenVisiblePosition.x;
+		if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = _screenVisiblePosition.y + (_screenVisibleSize.height/2);
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight + (_screenVisibleSize.height/2);
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
-        _windowSize.width = _screenVisibleSize.width;
+        //_windowSize.width = _screenVisibleSize.width;
         _windowSize.height = (_screenVisibleSize.height/2);
         _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
         
@@ -375,7 +442,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _size;
         
 		_windowPosition.x = _screenVisiblePosition.x;
-		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = _screenVisibleSize.width;
@@ -406,8 +480,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		_windowPosition.x = _screenVisiblePosition.x;
         
         // ASH: A quick hack does the job
-        _windowPosition.x = -1024.0f;
-		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+        _windowPosition.x = _screenVisiblePosition.x -(_screenVisibleSize.width);
+		if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = ((_screenVisibleSize.width));
@@ -435,9 +516,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		[self getVisibleScreenParams];        
         CFTypeRef _position;
         CFTypeRef _size;
-		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width/2);
-        _windowPosition.x = 100.0f;
-		_windowPosition.y = ((_screenVisiblePosition.x ==0)? _menuBarHeight:0);
+		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width);
+		if( _screenVisiblePosition.y == 0 )
+        {
+            _windowPosition.y = -_screenVisiblePosition.y;
+        }
+        else
+        {
+            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = ((_screenVisibleSize.width));
