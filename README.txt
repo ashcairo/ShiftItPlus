@@ -8,8 +8,8 @@ CHANGES
 This fork allows multiple monitor window switching and a customised set of keys which doesn't conflict with any of the apps I use (xCode, VLC).
 
 Keys
-Control + Command + , or . - Left Right Half windows positioning
-Shift + Control + Command + , or . - Left Right monitor positioning
+Control + Alt - Up/Down/Left/Right, for splitting the window in the screen.
+Control + Alt + Command - Left/Right, for moving window between screens.
 
 Search for 'ASH:' to find the changes made.
 
