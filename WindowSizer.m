@@ -442,7 +442,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _size;
         
 		_windowPosition.x = _screenVisiblePosition.x;
-		if( _screenVisiblePosition.y == 0 )
+		if( _screenVisiblePosition.y >= 0 )
         {
             _windowPosition.y = -_screenVisiblePosition.y;
         }
@@ -481,14 +481,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         
         // ASH: A quick hack does the job
         _windowPosition.x = _screenVisiblePosition.x -(_screenVisibleSize.width);
-		if( _screenVisiblePosition.y == 0 )
-        {
-            _windowPosition.y = -_screenVisiblePosition.y;
-        }
-        else
-        {
-            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
-        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = ((_screenVisibleSize.width));
@@ -517,14 +509,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _position;
         CFTypeRef _size;
 		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width);
-		if( _screenVisiblePosition.y == 0 )
-        {
-            _windowPosition.y = -_screenVisiblePosition.y;
-        }
-        else
-        {
-            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
-        }
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
         _windowSize.width = ((_screenVisibleSize.width));
