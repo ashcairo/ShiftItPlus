@@ -143,7 +143,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _size;
         
 		_windowPosition.x = _screenVisiblePosition.x;
-		if( _screenVisiblePosition.y == 0 )
+		if( _screenVisiblePosition.y >= 0 )
         {
             _windowPosition.y = -_screenVisiblePosition.y;
         }
@@ -180,7 +180,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _position;
         CFTypeRef _size;
 		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width-_windowSize.width);
-        if( _screenVisiblePosition.y == 0 )
+        if( _screenVisiblePosition.y >= 0 )
         {
             _windowPosition.y = -_screenVisiblePosition.y;
         }
@@ -210,7 +210,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         CFTypeRef _position;
         CFTypeRef _size;
 		_windowPosition.x = _screenVisiblePosition.x +(_screenVisibleSize.width/2);
-        if( _screenVisiblePosition.y == 0 )
+        if( _screenVisiblePosition.y >= 0 )
         {
             _windowPosition.y = -_screenVisiblePosition.y;
         }
