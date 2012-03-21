@@ -135,40 +135,75 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     return !error;
 }
 
--(IBAction)shiftToLeftHalf:(id)sender{
+-(IBAction)shiftToLeftHalf:(id)sender
+{   
+    static float lastWindowSize = 0;
+    
     NSLog(@"Shifting To Left Half");
-	if([self getWindowParameters]){
+	if([self getWindowParameters])
+    {
 		[self getVisibleScreenParams];
         CFTypeRef _position;
         CFTypeRef _size;
         
-		_windowPosition.x = _screenVisiblePosition.x;
+
+        float targetX, targetY;
+		targetX = _screenVisiblePosition.x;
 		if( _screenVisiblePosition.y >= 0 )
         {
-            _windowPosition.y = -_screenVisiblePosition.y;
+            targetY = -_screenVisiblePosition.y;
         }
         else
         {
-            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+            targetY = _otherScreenSize.height + _menuBarHeight;
         }
+        
+        static bool halfSize = true;
+        float targetSizeX = (_screenVisibleSize.width)/2;
+        if( targetX == _windowPosition.x )
+        {
+            if( _windowSize.width == lastWindowSize )
+            {
+                halfSize = !halfSize;
+                if( halfSize == false )
+                {
+                    targetSizeX = _screenVisibleSize.width*0.75f;
+                }
+            }
+            else
+            {
+                halfSize = true;
+            }
+        }
+        else
+        {
+            halfSize = true;
+        }
+        
+        _windowPosition.x = targetX;
+        _windowPosition.y = targetY;
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 		
-        _windowSize.width = ((_screenVisibleSize.width)/2);
+        _windowSize.width = targetSizeX;
+        
         _windowSize.height = _screenVisibleSize.height;
         _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
         NSLog(@"size2 width:%f, height:%f", _windowSize.width, _windowSize.height);
 
-		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilityPositionAttribute,(CFTypeRef*)_position) != kAXErrorSuccess){
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilityPositionAttribute,(CFTypeRef*)_position) != kAXErrorSuccess)
+        {
 			NSLog(@"Position cannot be changed");
 		}
-		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess){
+		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess)
+        {
 			NSLog(@"Size cannot be modified");
 		}
         
+        [self getWindowParameters];
+        lastWindowSize = _windowSize.width;
     }
     NSLog(@"Shifted To Left Half");
     _focusedWindow = NULL;
-    
 }
 
 
@@ -469,7 +504,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 // ASH: Switch monitors
--(IBAction)shiftToLeftMonitor:(id)sender{
+-(IBAction)shiftToLeftMonitor:(id)sender
+{
     NSLog(@"Shifting To Left Monitor");
     
 	if([self getWindowParameters]){
