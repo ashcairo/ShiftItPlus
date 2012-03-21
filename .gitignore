@@ -3,8 +3,5 @@
 *.db
 *.suo
 
-/Tools/RTBFG/RTBFG-build-desktop/
-/Tools/*/*/bin/
-/Tools/*/*/obj/
-
-/Dev/Qt/Project/External/FacebookQtGraphApi
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
