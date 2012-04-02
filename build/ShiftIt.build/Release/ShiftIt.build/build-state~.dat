@@ -3,12 +3,12 @@ v5
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist ShiftIt-Info.plist
-cCopyStringsFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 cCompileXIB /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib
+cCopyStringsFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 cCompileXIB /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib
 cProcessPCH /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth ShiftIt_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -54,40 +54,20 @@ c000000004E2780270000000000007C59
 t1311211559
 s31833
 
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.h
-c000000004E2780270000000000000571
-t1311211559
-s1393
-
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m
 c000000004E278027000000000000051C
 t1311211559
 s1308
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.h
-c000000004E278027000000000000047F
-t1311211559
-s1151
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m
 c000000004F1F293800000000000035F1
 t1327442232
 s13809
 
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.h
-c000000004E27802700000000000004FC
-t1311211559
-s1276
-
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m
 c000000004E27802700000000000005B3
 t1311211559
 s1459
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.h
-c000000004E2780270000000000000403
-t1311211559
-s1027
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m
 c000000004E6446DC000000000000162B
@@ -110,63 +90,58 @@ c000000004E27802800000000000712B4
 t1311211560
 s463540
 
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.h
-c000000004F1F2716000000000000062C
-t1327441686
-s1580
-
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m
 c000000004F69F09200000000000055E3
 t1332342930
 s21987
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app
-t1332343360
-s102
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM
-t1332343360
-s102
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework
-t1332343360
-s204
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist
-t1332343357
-s1404
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt
-t1332343360
-s41412
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/PkgInfo
-t1332343357
-s8
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1332343357
-s92
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/MainMenu.nib
-t1332343357
-s3934
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/PrefWindow.nib
-t1332343358
-s6902
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o
-t1332343359
-s21764
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o
-t1332343359
-s22076
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o
-t1332343359
-s8240
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftIt.LinkFileList
 c000000004F69F23D000000000000036B
@@ -174,25 +149,20 @@ t1332343357
 s875
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o
-t1332343359
-s33120
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o
-t1332343359
-s35684
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o
-t1332343359
-s12808
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o
-t1332343359
-s2556
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.h
-c000000004E27802800000000000003CC
-t1311211560
-s972
+t2
+s0
 
 N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m
 c000000004E2780280000000000000A5C
@@ -205,8 +175,8 @@ t1311211560
 s825
 
 N/var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth
-t1332343359
-s12029772
+t2
+s0
 
 NShiftIt-Info.plist
 c000000004E64466C0000000000000466
@@ -236,7 +206,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesacadd0e8e729b541^72f8e0e8e729b541^---0#1#0#--18"Check dependencies36"95FAF103-7601-4A16-9FDE-EBD001E8F36D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa54ec4bd291ab541^5743d6bd291ab541^---0#1#0#--18"Check dependencies36"824BF430-B5D3-42EC-88C9-0C794A6485B8-
 
 CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s354036159.730026
