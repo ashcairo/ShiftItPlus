@@ -16,6 +16,7 @@ Search for 'ASH:' to find the changes made.
 DOWNLOAD
 ========
 The compiled version of ShiftIt.app can be found in the build directory.
+https://github.com/ashcairo/ShiftItPlus/tree/master/build/Release
 
 DEMO VIDEO
 ==========
