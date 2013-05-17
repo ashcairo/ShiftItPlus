@@ -1,421 +1,0 @@
-TShiftIt
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist ShiftIt-Info.plist
-cCopyStringsFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib
-cCompileXIB /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib
-cProcessPCH /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth ShiftIt_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt normal i386
-cGenerateDSYMFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt
-cPBXCp Sparkle.framework build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework
-cTouch /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
-c000000004F5FFAF400000000000000EE
-t1331690228
-s238
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Carbon.framework/Carbon
-c000000004F3E8D3E0000000000002A30
-t1329499454
-s10800
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c000000004F3E8D3E00000000000001E5
-t1329499454
-s485
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004EF6623F0000000000006560
-t1324769855
-s25952
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/InfoPlist.strings
-c000000004E278027000000000000002D
-t1311211559
-s45
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib
-c000000004F1F2CA50000000000006416
-t1327443109
-s25622
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib
-c000000004E2780270000000000007C59
-t1311211559
-s31833
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.h
-c000000004E2780270000000000000571
-t1311211559
-s1393
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m
-c000000004E278027000000000000051C
-t1311211559
-s1308
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.h
-c000000004E278027000000000000047F
-t1311211559
-s1151
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m
-c000000004F1F293800000000000035F1
-t1327442232
-s13809
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.h
-c000000004E27802700000000000004FC
-t1311211559
-s1276
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m
-c000000004E27802700000000000005B3
-t1311211559
-s1459
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.h
-c000000004E2780270000000000000403
-t1311211559
-s1027
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m
-c000000004E6446DC000000000000162B
-t1315194588
-s5675
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftIt_Prefix.pch
-c000000004E27802700000000000002F2
-t1311211559
-s754
-i<Cocoa/Cocoa.h>
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework
-c000000004F057F3D00000000000000EE
-t1325760317
-s238
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Sparkle
-c000000004E27802800000000000712B4
-t1311211560
-s463540
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.h
-c000000004F1F2716000000000000062C
-t1327441686
-s1580
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m
-c000000004F69F09200000000000055E3
-t1332342930
-s21987
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app
-t1332343360
-s102
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM
-t1332343360
-s102
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework
-t1332343360
-s204
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist
-t1332343357
-s1404
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt
-t1332343360
-s41412
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/PkgInfo
-t1332343357
-s8
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1332343357
-s92
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/MainMenu.nib
-t1332343357
-s3934
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/PrefWindow.nib
-t1332343358
-s6902
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o
-t1332343359
-s21764
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o
-t1332343359
-s22076
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o
-t1332343359
-s8240
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftIt.LinkFileList
-c000000004F69F23D000000000000036B
-t1332343357
-s875
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o
-t1332343359
-s33120
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o
-t1332343359
-s35684
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o
-t1332343359
-s12808
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o
-t1332343359
-s2556
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.h
-c000000004E27802800000000000003CC
-t1311211560
-s972
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m
-c000000004E2780280000000000000A5C
-t1311211560
-s2652
-
-N/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m
-c000000004E2780280000000000000339
-t1311211560
-s825
-
-N/var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth
-t1332343359
-s12029772
-
-NShiftIt-Info.plist
-c000000004E64466C0000000000000466
-t1315194476
-s1126
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m
-r0
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m
-r0
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m
-r0
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m
-r0
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m
-r0
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m
-r0
-
-CBuild AST from /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesacadd0e8e729b541^72f8e0e8e729b541^---0#1#0#--18"Check dependencies36"95FAF103-7601-4A16-9FDE-EBD001E8F36D-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.730026
-e354036159.911042
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m350cbbbf291ab541^70cef4bf291ab541^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m0000000000000000^2964"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o PrefWindowController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindowController.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/PrefWindowController.o36"C7C51DF1-9DD0-47C1-86D5-BF2A065ABA05-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.533356
-e354036159.770838
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m5fb388bf291ab541^c555c5bf291ab541^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m0000000000000000^2910"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o Preferences.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Preferences.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/Preferences.o36"2650C509-1E46-4BD8-9708-DD9DFF863E78-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.425422
-e354036159.670279
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m21076dbf291ab541^9e61aebf291ab541^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m0000000000000000^2892"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o SIHotKey.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/SIHotKey.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/SIHotKey.o36"3F16D0BB-10C8-481C-8505-A671EE66D360-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.424790
-e354036159.728707
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m:125:17: warning: expression result unused [-Wunused-value]
-o            for(i ; i< [loginItemsArray count]; i++){
-o                ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m7dea6cbf291ab541^f88ababf291ab541^-221"/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m:125:17: warning: expression result unused [-Wunused-value]            for(i ; i< [loginItemsArray count]; i++){                ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@24"Expression result unused-354036159#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@84"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m0000000000000000^124#16#124#16#4758#0#19"Unused Entity Issue1(3@84"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m0000000000000000^124#16#124#17#4758#0#-0#0#0#-19%DVTDocumentLocation4@84"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m0000000000000000^2952"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o ShiftItAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftItAppDelegate.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftItAppDelegate.o36"5F694036-E8E1-408F-B5CB-8E95D2A8272C-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.424827
-e354036159.823077
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m8dee6cbf291ab541^2db5d2bf291ab541^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m0000000000000000^2910"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o WindowSizer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/WindowSizer.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/WindowSizer.o36"834581F1-E82F-4D9A-B22D-B6AA728A1C5C-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.671667
-e354036159.866824
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m151eacbf291ab541^5be9ddbf291ab541^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m0000000000000000^2916"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o hKController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/hKController.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/hKController.o36"4A54268B-FBB0-489B-B58F-43EE8631A439-
-
-CCompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036159.424799
-e354036159.532042
-r1
-xCompileC
-xbuild/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m14eb6cbf291ab541^d73388bf291ab541^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m0000000000000000^2868"CompileC build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -include /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch -MMD -MT dependencies -MF /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/main.m -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/main.o36"5991B291-C06B-4D0E-9A07-5DAB0D4419A4-
-
-CCompileXIB /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib
-s354036157.854088
-e354036157.890607
-r1
-xCompileXIB
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compiling /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xibfdbbdabd291ab541^2522e4bd291ab541^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib0000000000000000^621"CompileXIB English.lproj/MainMenu.xib    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/MainMenu.nib /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/MainMenu.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk36"1424E180-8182-4DA8-BD1F-A054C7DF1FEB-
-
-CCompileXIB /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib
-s354036157.854405
-e354036158.419480
-r1
-xCompileXIB
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compiling /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib92ccdabd291ab541^c3636bbe291ab541^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib0000000000000000^585"CompileXIB PrefWindow.xib    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/PrefWindow.nib /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/PrefWindow.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk36"288C02F2-28BC-4018-AFA8-5D93EF175668-
-
-CCopyStringsFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s354036157.854104
-e354036157.857147
-r1
-xCopyStringsFile
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.strings13bbdabd291ab541^5d6fdbbd291ab541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/English.lproj/InfoPlist.strings0000000000000000^412"CopyStringsFile build/Release/ShiftIt.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Resources/English.lproj -- English.lproj/InfoPlist.strings36"55FC7C58-7E6E-45E8-8EC1-295E53D32877-
-
-CGenerateDSYMFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt
-s354036160.199525
-e354036160.232956
-r1
-xGenerateDSYMFile
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Generating /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM5d3133c0291ab541^e0a23bc0291ab541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM000000000080d041^395"GenerateDSYMFile build/Release/ShiftIt.app.dSYM build/Release/ShiftIt.app/Contents/MacOS/ShiftIt    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app.dSYM36"FD03B3A6-F44A-4CA9-8892-290AAA69AE2D-
-
-CLd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt normal i386
-s354036159.919179
-e354036160.191936
-r1
-xLd
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Link /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftItb16bebbf291ab541^fb2231c0291ab541^---0#0#0#--876"Ld build/Release/ShiftIt.app/Contents/MacOS/ShiftIt normal i386    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ -filelist /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/Objects-normal/i386/ShiftIt.LinkFileList -mmacosx-version-min=10.7 -framework Sparkle -framework Cocoa -framework Carbon -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/MacOS/ShiftIt36"2C236C50-977F-42E4-90A9-20511359AC8C-
-
-CPBXCp Sparkle.framework build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework
-s354036160.240646
-e354036160.515099
-r1
-xPBXCp
-xSparkle.framework
-xbuild/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.frameworkbda83dc0291ab541^dbdd83c0291ab541^-1942"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Resources/relaunch -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework/Resources/relaunch /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Sparkle -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework/Sparkle /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Versions/A/Resources/relaunch -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework/Versions/A/Resources/relaunch /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Versions/A/Sparkle -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework/Versions/A/Sparkle /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Versions/Current/Resources/relaunch -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Resources/relaunch /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework/Versions/Current/Sparkle -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Sparkle -0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework000000000080d041^541"PBXCp Sparkle.framework build/Release/ShiftIt.app/Contents/Frameworks/Sparkle.framework    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/Sparkle.framework /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Frameworks36"9B94D512-52D3-4761-AD00-AFA8B66A0130-
-
-CProcessInfoPlistFile /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist ShiftIt-Info.plist
-s354036157.842502
-e354036157.846084
-r1
-xProcessInfoPlistFile
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist
-xShiftIt-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Process ShiftIt-Info.plist6ac1d7bd291ab541^7ba1d8bd291ab541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftIt-Info.plist0000000000000000^427"ProcessInfoPlistFile build/Release/ShiftIt.app/Contents/Info.plist ShiftIt-Info.plist    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    builtin-infoPlistUtility ShiftIt-Info.plist -genpkginfo /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app/Contents/Info.plist36"6DE9BFBD-6800-4426-AF1E-0EF2D0D081A0-
-
-CProcessPCH /Users/cairo/Library/Developer/Xcode/DerivedData/ShiftIt-gyjwmdkgqenpxygrmduqyjeihrjf/Index/PrecompiledHeaders/ShiftIt_Prefix-aeydsweknlujivdgbjespwisadha_ast/ShiftIt_Prefix.pch.pth ShiftIt_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth ShiftIt_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s354036158.428378
-e354036159.417158
-r1
-xProcessPCH
-x/var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth
-xShiftIt_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection29"Precompile ShiftIt_Prefix.pchf6d16dbe291ab541^21cb6abf291ab541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftIt_Prefix.pch0000000000000000^2955"ProcessPCH /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth ShiftIt_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-generated-files.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-own-target-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-all-target-headers.hmap -iquote /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/ShiftIt-project-headers.hmap -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/include -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources/i386 -I/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/ShiftIt.build/Release/ShiftIt.build/DerivedSources -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release -F/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+ --serialize-diagnostics /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.dia -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/ShiftIt_Prefix.pch -o /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/ww/dqklkzrj5vjf1mv_xmwlfjgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ShiftIt_Prefix-dqqidcxbmyzhaagzahalsarbyxvr/ShiftIt_Prefix.pch.d36"454BAFEA-CE08-48FB-8E31-203215A5B179-
-
-CTouch /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app
-s354036160.523205
-e354036160.529806
-r1
-xTouch
-x/Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Touch /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app65fe85c0291ab541^a5a487c0291ab541^---0#0#0#--183"Touch build/Release/ShiftIt.app    cd /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+    /usr/bin/touch -c /Users/cairo/Dropbox/Dev/Platforms/OSX/ShiftIt+/build/Release/ShiftIt.app36"F000F01E-ADC0-4940-B783-5872519C60E2-
-
