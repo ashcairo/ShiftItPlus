@@ -33,20 +33,18 @@
     
     NSPoint _otherScreenPosition;
     NSSize _otherScreenSize;
+
+    int _numberOfScreens;
 }
 
--(IBAction)shiftToLeftHalf:(id)sender;
--(IBAction)shiftToRightHalf:(id)sender;
--(IBAction)shiftToBottomHalf:(id)sender;
--(IBAction)shiftToTopHalf:(id)sender;
--(IBAction)shiftToTopRight:(id)sender;
--(IBAction)shiftToTopLeft:(id)sender;
--(IBAction)shiftToBottomLeft:(id)sender;
--(IBAction)shiftToBottomRight:(id)sender;
--(IBAction)fullScreen:(id)sender;
--(IBAction)shiftToCenter:(id)sender;
-
+-(IBAction)shiftLeft:(id)sender;
+-(IBAction)shiftRight:(id)sender;
+-(IBAction)shiftDown:(id)sender;
+-(IBAction)shiftUp:(id)sender;
 -(IBAction)shiftToLeftMonitor:(id)sender;
 -(IBAction)shiftToRightMonitor:(id)sender;
+
+-(IBAction)fullScreen:(id)sender;
+-(IBAction)shiftToCenter:(id)sender;
 
 @end
