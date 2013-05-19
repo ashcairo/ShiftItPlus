@@ -231,8 +231,7 @@ bool fuzzyEquals(const float a, const float b)
 		[self getVisibleScreenParams];
         CFTypeRef _position;
         CFTypeRef _size;
-
-
+        
         float targetSizeX = _screenVisibleSize.width*0.8f;
         float targetX = _screenVisiblePosition.x + _screenVisibleSize.width - targetSizeX;
         if( fuzzyEquals( _windowSize.width, targetSizeX ) || targetX != _windowPosition.x || _windowSize.height != _screenVisibleSize.height )
@@ -245,7 +244,7 @@ bool fuzzyEquals(const float a, const float b)
                 targetSizeX = _screenVisibleSize.width*0.8f;
             }
         }
-        targetX = _screenVisiblePosition.x + _screenVisibleSize.width - targetSizeX;
+        targetX = ( _screenVisiblePosition.x / 2 ) + _screenVisibleSize.width - targetSizeX;
 
         _windowSize.width = targetSizeX;
         _windowSize.height = _screenVisibleSize.height;
@@ -339,16 +338,10 @@ bool fuzzyEquals(const float a, const float b)
             if( _windowPosition.x < _windowSize.width/2 )
             {
                 [self shiftLeft:NULL];
-                [self shiftDown:NULL];
-                [self shiftLeft:NULL];
-                [self shiftDown:NULL];
             }
             else
             {
                 [self shiftRight:NULL];
-                [self shiftDown:NULL];
-                [self shiftRight:NULL];
-                [self shiftDown:NULL];
             }
         }
         else
@@ -416,16 +409,10 @@ bool fuzzyEquals(const float a, const float b)
             if( _windowPosition.x < _windowSize.width/2 )
             {
                 [self shiftLeft:NULL];
-                [self shiftUp:NULL];
-                [self shiftLeft:NULL];
-                [self shiftUp:NULL];
             }
             else
             {
                 [self shiftRight:NULL];
-                [self shiftUp:NULL];
-                [self shiftRight:NULL];
-                [self shiftUp:NULL];
             }
         }
         else
