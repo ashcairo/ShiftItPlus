@@ -22,23 +22,33 @@
 @implementation ShiftItAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	if( !AXAPIEnabled() )
-    {
-        int ret = NSRunAlertPanel (@"The Accessibility API is required for this app.  Please \"Enable access for assistive devices and try again\".", @"", @"OK", @"Cancel",NULL);
-        switch (ret){
-            case NSAlertDefaultReturn:
-                [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/UniversalAccessPref.prefPane"];
-				[NSApp terminate:self];
-				return;
-                break;
-            case NSAlertAlternateReturn:
-                [NSApp terminate:self];
-                return;
-                break;
-            default:
-                break;
+
+    NSDictionary *options = @{(id)kAXTrustedCheckOptionPrompt: @YES};
+    BOOL accessibilityEnabled = AXIsProcessTrustedWithOptions((CFDictionaryRef)options);
+
+    if (AXIsProcessTrustedWithOptions != NULL) {
+        // 10.9 and later
+    }
+    else {
+        // 10.8 and older
+        if( !AXAPIEnabled() )
+        {
+            int ret = NSRunAlertPanel (@"The Accessibility API is required for this app.  Please \"Enable access for assistive devices and try again\".", @"", @"OK", @"Cancel",NULL);
+            switch (ret){
+                case NSAlertDefaultReturn:
+                    [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/UniversalAccessPref.prefPane"];
+                    [NSApp terminate:self];
+                    return;
+                    break;
+                case NSAlertAlternateReturn:
+                    [NSApp terminate:self];
+                    return;
+                    break;
+                default:
+                    break;
+            }
         }
-    }    
+    }
 }
 
 -(id)init{

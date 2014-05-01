@@ -182,27 +182,29 @@ bool fuzzyEquals(const float a, const float b)
         
         float targetX, targetY;
 		targetX = _screenVisiblePosition.x;
-		if( _screenVisiblePosition.y >= 0 )
-        {
-            targetY = -_screenVisiblePosition.y;
-        }
-        else
-        {
-            targetY = _otherScreenSize.height + _menuBarHeight;
-        }
 
         float targetSizeX = _screenVisibleSize.width*0.8f;
         if( _windowSize.width == targetSizeX || targetX != _windowPosition.x || _windowSize.height != _screenVisibleSize.height )
         {
             targetSizeX = _screenVisibleSize.width*0.5f;
         }
-        
-        _windowPosition.x = targetX;
-        _windowPosition.y = targetY;
-		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
-		
+
         _windowSize.width = targetSizeX;
         _windowSize.height = _screenVisibleSize.height;
+
+        _windowPosition.x = targetX;
+
+		if( _screenVisiblePosition.y >= 0 )
+        {
+            targetY = _menuBarHeight;
+        }
+        else
+        {
+            targetY = _otherScreenSize.height + _menuBarHeight;
+        }
+
+        _windowPosition.y = targetY;
+		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
         
         _size = (CFTypeRef)(AXValueCreate(kAXValueCGSizeType, (const void *)&_windowSize));					
         NSLog(@"size2 width:%f, height:%f", _windowSize.width, _windowSize.height);
@@ -231,9 +233,10 @@ bool fuzzyEquals(const float a, const float b)
 		[self getVisibleScreenParams];
         CFTypeRef _position;
         CFTypeRef _size;
-        
+
+        float targetX, targetY;
         float targetSizeX = _screenVisibleSize.width*0.8f;
-        float targetX = _screenVisiblePosition.x + _screenVisibleSize.width - targetSizeX;
+        targetX = _screenVisiblePosition.x + _screenVisibleSize.width - targetSizeX;
         if( fuzzyEquals( _windowSize.width, targetSizeX ) || targetX != _windowPosition.x || _windowSize.height != _screenVisibleSize.height )
         {
             targetSizeX = _screenVisibleSize.width*0.5f;
@@ -254,12 +257,14 @@ bool fuzzyEquals(const float a, const float b)
 
         if( _screenVisiblePosition.y >= 0 )
         {
-            _windowPosition.y = -_screenVisiblePosition.y;
+            targetY = _menuBarHeight;
         }
         else
         {
-            _windowPosition.y = _otherScreenSize.height + _menuBarHeight;
+            targetY = _otherScreenSize.height + _menuBarHeight;
         }
+
+        _windowPosition.y = targetY;
 		_position = (CFTypeRef)(AXValueCreate(kAXValueCGPointType, (const void *)&_windowPosition));
 
 		if(AXUIElementSetAttributeValue((AXUIElementRef)_focusedWindow,(CFStringRef)NSAccessibilitySizeAttribute,(CFTypeRef*)_size) != kAXErrorSuccess)
@@ -313,7 +318,7 @@ bool fuzzyEquals(const float a, const float b)
         }
         else
         {
-            targetPositionY = -_screenVisiblePosition.y;
+            targetPositionY = -_screenVisiblePosition.y + _menuBarHeight;
         }
 
         float targetHeight = (_screenVisibleSize.height/2);
